@@ -3,6 +3,10 @@ header {
     height: 8vh;
     position: sticky;
     top: 0;
+    
+    display: flex;
+    justify-content:space-between;
+    overflow:visible;
 
     background-color: var(--bg);
     z-index: 1;
@@ -28,6 +32,11 @@ h1 {
 nav a {
     font-family: 'Silkscreen', 'Fira Sans', sans-serif;
     margin: 0 8px;
+}
+
+#logo {
+    padding: 4px;
+    height: 10vh;
 }
 
 #page-anchor {
