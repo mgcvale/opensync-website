@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/header.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/anchor.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/content.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/form.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/conta/info-conta.css" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jersey+25&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span id="separator"></span>
+            <a href="index.html">Home</a>
+            <span id="separator">|</span>
+            <a href="fotos.html">Fotos</a>
+            <span id="separator">|</span>
+            <a href="conta.html" id="page-anchor">Conta</a>
+            <span id="separator">|</span>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <div id="centered-div">
+        <h2 id="form-title">Login</h2>
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="username-input" placeholder="username">
+            <br><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" name="password" id="password-input" placeholder="senha">
+            <br><br>
+            <input type="submit" value="Submit" id="submit">
+            <br><br>
+            <p>Não tem uma conta? Crie <a>Aqui</a></p>
+        </form>
+
+        <hr>
+
+        <section>
+            <h2>Informacões sobre sua conta</h2>
+            <div id="infos-conta">
+                <div id="infos-esquerda">
+                    <p>Username: </p>
+                    <p>Privilégios: </p>
+                    <p>Data de cadastro: </p>
+                    <p>Espaco disponível: </p>
+                    <p>Espaco utilizado: </p>
+                </div>
+                <div id="infos-dreita">
+                    <div id="inline-form">
+                        <p>Trocar de username: </p> 
+                        <form>
+                            <input type="text" placeholder="novo username"> <input type="submit" value="Trocar">
+                        </form>
+                    </div>
+                    <p>Trocar senha: <a><b>Clique aqui</b></a></p>
+                    <p>Deletar conta: <a><b>Clique aqui</b></a></p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

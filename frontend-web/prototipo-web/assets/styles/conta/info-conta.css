@@ -1,0 +1,51 @@
+section > h2 {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+#infos-conta {
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+}
+
+#infos-conta > div {
+    flex: 1;
+    background-color: rgb(6, 6, 6);
+    border-radius: 8px;
+    margin: 8px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#infos-conta > div > *:not(:last-child) {
+    margin-bottom: 5vh;
+}
+
+
+#inline-form {
+    height: auto;
+}
+
+#inline-form p {
+    margin-bottom: 2.5vh;
+}
+
+#inline-form > form {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#inline-form > form * {
+    margin-right: 8px;
+}
+#inline-form > form > input[type="submit"] {
+    width: auto;
+    padding: 0 8px;
+}

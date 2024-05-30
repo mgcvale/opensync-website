@@ -1,0 +1,25 @@
+:root {
+    --bg: black;
+    --bg-shadow: rgb(17, 17, 17);
+    --bg2: rgb(30, 30, 30);
+    --bg3: rgb(60, 60, 60);
+    --bg4: rgb(120, 120, 120);
+    --fg: rgb(242, 236, 229);
+    --fg-shadow: rgb(180, 178, 176);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fg);
+    font-family: 'Fira Sans', 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+[contenteditable="true"]:focus {
+    outline: none;
+}

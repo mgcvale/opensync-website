@@ -1,0 +1,65 @@
+form {
+    border: 2px solid var(--fg);
+    border-radius: 4px;
+    padding: 2em;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    background-color: var(--bg-shadow);
+    border: 2px solid var(--fg-shadow);
+    border-radius: 6px;
+    padding: 4px;
+    transition: 300ms;
+}
+
+input:hover {
+    transform: scale(1.02);
+    transition: 300ms;
+}
+
+input:focus {
+    outline: none;
+    outline: 1px solid white;
+    filter: drop-shadow(0 0 4px var(--bg4));
+    transform: scale(1.02);
+    transition: 300ms;
+}
+
+form p {
+    font-size: 0.6em;
+}
+form p a {
+    font-family: "Fira Sans", "Fira Code", monospace;
+    font-weight: 500;
+}
+
+input[type="submit"] {
+    width: min-content;
+    padding: 4px 12px;
+    font-weight: 400;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+#form-title {
+    font-family: "Silkscreen", "Fira Sans", "Fira Code", monospace;
+    font-weight: 500;
+    filter: drop-shadow(2px 2px 2px var(--fg-shadow));
+    display: inline;
+    margin: 1em;
+}
