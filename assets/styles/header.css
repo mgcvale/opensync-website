@@ -1,3 +1,5 @@
+@import url(./reset.css);
+
 header {
     width: 100%;
     height: 8vh;
@@ -18,15 +20,7 @@ nav {
     align-items: center;
     padding-bottom: 4px;
     border-bottom: 0.1em solid var(--fg);
-    padding-right: 5vw /*Esse padding é pra deixar a nav um pouco maior e da um feel mais orgânico pro site*/
-}
-
-nav * {
-    margin: 0 8px;
-}
-
-h1 {
-    filter: drop-shadow(0 0 6px var(--fg));
+    padding-right: 5vw;
 }
 
 nav a {
@@ -37,22 +31,4 @@ nav a {
 #logo {
     padding: 4px;
     height: 10vh;
-}
-
-#page-anchor {
-    filter: drop-shadow(2px 2px 1px var(--bg4));
-}
-
-#page-anchor::after {
-    transform: scale(1);
-}
-
-#page-name {
-    font-family: "Jersey 25", "Silkscreen", sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-#separator {
-    margin: auto 8px;
 }

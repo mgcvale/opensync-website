@@ -1,3 +1,5 @@
+@import url(../reset.css);
+
 section > h2 {
     text-align: center;
     margin-bottom: 3vh;

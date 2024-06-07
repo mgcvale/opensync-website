@@ -1,3 +1,5 @@
+@import url(./reset.css);
+
 form {
     border: 2px solid var(--fg);
     border-radius: 4px;
