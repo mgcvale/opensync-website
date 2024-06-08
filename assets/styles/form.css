@@ -18,20 +18,22 @@ input {
     width: 100%;
     text-align: left;
     background-color: var(--bg-shadow);
-    border: 2px solid var(--fg-shadow);
+    color: var(--fg);
+    border: 2px solid var(--bg4);
     border-radius: 6px;
     padding: 4px;
     transition: 300ms;
 }
 
 input:hover {
+    border-color: var(--fg-shadow);
     transform: scale(1.02);
     transition: 300ms;
 }
 
 input:focus {
     outline: none;
-    outline: 1px solid white;
+    outline: 1px solid var(--fg);
     filter: drop-shadow(0 0 4px var(--bg4));
     transform: scale(1.02);
     transition: 300ms;
@@ -51,6 +53,22 @@ input[type="submit"] {
     font-weight: 400;
     transition: 300ms;
     cursor: pointer;
+}
+
+button {
+    padding: 4px 12px;
+    font-weight: 400;
+    transition: 300ms;
+    cursor: pointer;
+    background-color: var(--bg-shadow);
+    color: var(--fg);
+    border: 2px solid var(--bg3);
+    border-radius: 6px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    border-color: var(--fg-shadow);
 }
 
 input[type="submit"]:hover {

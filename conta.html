@@ -25,23 +25,23 @@
     </header>
 
     <div id="content-div">
-        <h2 id="form-title">Login</h2>
+        <div id="login-form-container">
+            <h2 id="form-title">Login</h2>
+            <form id="login-form" action="">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username" id="username-input" placeholder="username">
+                <br><br>
+                <label for="password">Senha:</label><br>
+                <input type="password" name="password" id="password-input" placeholder="senha">
+                <br><br>
+                <input type="submit" value="Submit" id="submit">
+                <br><br>
+                <p>Não tem uma conta? Crie <a>Aqui</a></p>
+            </form>
+            <hr>
+        </div>
 
-        <form>
-            <label for="username">Username:</label><br>
-            <input type="text" name="username" id="username-input" placeholder="username">
-            <br><br>
-            <label for="password">Senha:</label><br>
-            <input type="password" name="password" id="password-input" placeholder="senha">
-            <br><br>
-            <input type="submit" value="Submit" id="submit">
-            <br><br>
-            <p>Não tem uma conta? Crie <a>Aqui</a></p>
-        </form>
-
-        <hr>
-
-        <section>
+        <section id="account-info-container">
             <h2>Informacões sobre sua conta</h2>
             <div id="infos-conta">
                 <div id="infos-esquerda">
@@ -60,6 +60,7 @@
                     </div>
                     <p>Trocar senha: <a><b>Clique aqui</b></a></p>
                     <p>Deletar conta: <a><b>Clique aqui</b></a></p>
+                    <button id="logout-button">Sair da conta</button>
                 </div>
             </div>
 
@@ -67,5 +68,7 @@
 
     </div>
 
+    <script type="module" src="./assets/scripts/conta/conta.js"></script>
+    <script type="module" src="./assets/scripts/login-handler.js"></script>
 </body>
 </html>
