@@ -1,73 +1,63 @@
 @import url(./reset.css);
 
 main{
-    padding: 20px;
-}
-
-input[type="submit"] {
-    min-width: 15%;
-    text-align: center;
+    padding: 0 20px;
 }
 
 form {
+    max-width: 300px;
     border: 2px solid var(--fg);
     border-radius: 4px;
-    padding: 2em;
+    padding: 40px;
 }
 
 label {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
     font-size: 0.8em;
 }
 
-input {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
+input[type="submit"] {
+    cursor: pointer;
+    padding: 3px 12px;
+    transition: .3s;
+}
+
+input { 
     background-color: var(--bg-shadow);
     color: var(--fg);
     border: 2px solid var(--bg4);
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 4px;
-    transition: 300ms;
+    transition: .3s;
 }
 
 input:hover {
     border-color: var(--fg-shadow);
-    transform: scale(1.02);
-    transition: 300ms;
 }
 
 input:focus {
-    outline: none;
     outline: 1px solid var(--fg);
     filter: drop-shadow(0 0 4px var(--bg4));
+}
+
+input:focus,
+input:hover{
     transform: scale(1.02);
-    transition: 300ms;
+    transition: .3s;
 }
 
 form p {
     font-size: 0.6em;
 }
+
 form p a {
     font-family: "Fira Sans", "Fira Code", monospace;
     font-weight: 500;
 }
 
-input[type="submit"] {
-    width: min-content;
-    padding: 4px 12px;
-    font-weight: 400;
-    transition: 300ms;
-    cursor: pointer;
-}
-
 button {
     padding: 4px 12px;
     font-weight: 400;
-    transition: 300ms;
+    transition: .3s;
     cursor: pointer;
     background-color: var(--bg-shadow);
     color: var(--fg);
@@ -82,51 +72,5 @@ button:hover {
 
 input[type="submit"]:hover {
     transform: scale(1.05);
-    transition: 300ms;
-}
-
-#form-title {
-    font-family: "Silkscreen", "Fira Sans", "Fira Code", monospace;
-    font-weight: 500;
-    filter: drop-shadow(2px 2px 2px var(--fg-shadow));
-    display: inline;
-    margin: 1em;
-}
-
-#content-div {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    height: 88vh;
-}
-
-#centered-content-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    width: 100%;
-    height: 88vh;
-}
-
-section {
-    width: 80%;
-    margin: auto;
-    text-align: left;
-}
-
-hr {
-    margin: 4vh auto;
-    opacity: 0;
-    background-color: var(--fg);
-}
-
-h2 {
-    font-family: "Silkscreen", "Fira Code", "Fira Sans", monospace;
-    font-weight: 400;
+    transition: .3s;
 }

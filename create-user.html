@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HyprSync - Sign-in</title>
 </head>
 <body>
     <header>
@@ -19,29 +19,25 @@
         </div>
     </header>
 
-    <hr>
+    <main class="flex-container">
+        <section class="vertical-display">
+            <h1>Sign-in</h1>
 
-    <div id="content-div">
-        <div id="signin-form-container">
-
-            <h2 id="form-title">Sign-in</h2>
-
-            <form id="signin-form" action="">
+            <form id="signin-form">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="username" required>
-                <br><br>
+                
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" placeholder="senha" required>
+
                 <label for="confirm-password">Confirmar senha:</label>
                 <input type="password" id="confirm-password" placeholder="confirmar senha" required>
-                <br><br>
+
                 <input type="submit" value="Criar" id="submit" name="submit">
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 
+    <script type="module" src="./assets/scripts/account/signin-handler.js"></script>
 </body>
-
-<script type="module" src="./assets/scripts/account/signin-handler.js"></script>
-
 </html>

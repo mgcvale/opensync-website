@@ -24,18 +24,18 @@
         <a class="no-animation" href="./index.html"><img id="logo" src="./assets/images/hyprsync-oneline.png"></a>
     </header>
 
-    <div id="content-div">
+    <div id="content-div" class="flex-container">
         <div id="login-form-container">
-            <h2 id="form-title">Login</h2>
-            <form id="login-form" action="">
+            <h1>Login</h1>
+
+            <form id="login-form">
                 <label for="username">Username:</label><br>
                 <input type="text" name="username" id="username-input" placeholder="username">
-                <br><br>
-                <label for="password">Senha:</label><br>
+
+                <label for="password">Senha:</label>
                 <input type="password" name="password" id="password-input" placeholder="senha">
-                <br><br>
+
                 <input type="submit" value="Submit" id="submit">
-                <br><br>
                 <p>Não tem uma conta? Crie <a href="create-user.html">Aqui</a></p>
             </form>
             <hr>
@@ -43,6 +43,7 @@
 
         <section id="account-info-container">
             <h2>Informacões sobre sua conta</h2>
+
             <div id="infos-conta">
                 <div id="infos-esquerda">
                     <p id="username">Username: </p>
@@ -55,7 +56,8 @@
                     <div id="inline-form">
                         <p>Trocar nome de usuário: </p> 
                         <form id="username-change-form">
-                            <input type="text" placeholder="novo nome de usuário" name="new_username"> <input type="submit" value="Trocar">
+                            <input type="text" placeholder="novo nome de usuário" name="new_username">
+                            <input type="submit" value="Trocar">
                         </form>
                     </div>
                     <p>Trocar senha: <a><b>Clique aqui</b></a></p>

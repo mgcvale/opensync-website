@@ -11,6 +11,7 @@
     --fg-shadow: rgb(180, 178, 176);
 
     --font-main: 'Fira Sans', 'Fira Code', 'Courier New', Courier, monospace;
+    --font-title: 'Silkscreen', 'Fira Code', 'Fira Sans', monospace;
 }
 
 * {
@@ -36,9 +37,16 @@ body {
 
 h1{
     color: var(--fg);
+    font-size: 2.1em;
     text-align: center;
     text-wrap: nowrap;
     filter: drop-shadow(0 0 6px var(--fg));
+}
+
+h1,
+h2 {
+    font-family: var(--font-title);
+    font-weight: 400;
 }
 
 a {
