@@ -1,5 +1,5 @@
-import { checkForLogin } from "./conta/conta.js";
-import { getCookie, deleteCookie, setCookie } from "./cookie-manager.js";
+import { checkForLogin } from "./conta.js";
+import { getCookie, deleteCookie, setCookie } from "../cookie-manager.js";
 
 
 document.getElementById("login-form").addEventListener('submit', function(event){
@@ -7,13 +7,14 @@ document.getElementById("login-form").addEventListener('submit', function(event)
 
     const form = event.target;
     const formData = new FormData(form);
-    const url = 'http://127.0.0.1:5000/users/get_token';
+    const url = 'http://localhost:5000/users/get_token';
 
     const jsonData = {};
     formData.forEach((value, key) => {
         jsonData[key] = value;
     });
 
+    console.log("AAAAAAA");
     fetch(url, {
         method: 'POST',
         headers: {
@@ -29,7 +30,7 @@ document.getElementById("login-form").addEventListener('submit', function(event)
     })
     .then(data => {
         console.log(data);
-        setCookie("access_token", data.access_token, 30, true);
+        setCookie("access_token", data.access_token, 30, false);
         checkForLogin();
     })
     .catch(error => {

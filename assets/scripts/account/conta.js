@@ -1,4 +1,5 @@
 import { deleteCookie, getCookie } from "../cookie-manager.js";
+import { getUserData } from "./user-handler.js";
 
 
 export function checkForLogin() {
@@ -7,6 +8,7 @@ export function checkForLogin() {
         console.log(access_token);
         removeLoginForm();
         addAccountInfoForm();
+        getUserData();
     } else {
         addLoginForm();
         removeAccountInfoForm();
@@ -30,8 +32,8 @@ function addAccountInfoForm() {
     document.getElementById("account-info-container").style.display = '';
 }
 
-
 checkForLogin();
+
 
 document.getElementById("logout-button").addEventListener('click', function(event) {
     deleteCookie('access_token');

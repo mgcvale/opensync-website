@@ -36,7 +36,7 @@
                 <br><br>
                 <input type="submit" value="Submit" id="submit">
                 <br><br>
-                <p>Não tem uma conta? Crie <a>Aqui</a></p>
+                <p>Não tem uma conta? Crie <a href="create-user.html">Aqui</a></p>
             </form>
             <hr>
         </div>
@@ -45,8 +45,8 @@
             <h2>Informacões sobre sua conta</h2>
             <div id="infos-conta">
                 <div id="infos-esquerda">
-                    <p>Username: </p>
-                    <p>Privilégios: </p>
+                    <p id="username">Username: </p>
+                    <p id="privilegios">Privilégios: </p>
                     <p>Data de cadastro: </p>
                     <p>Espaco disponível: </p>
                     <p>Espaco utilizado: </p>
@@ -54,12 +54,12 @@
                 <div id="infos-dreita">
                     <div id="inline-form">
                         <p>Trocar nome de usuário: </p> 
-                        <form>
-                            <input type="text" placeholder="novo nome de usuário"> <input type="submit" value="Trocar">
+                        <form id="username-change-form">
+                            <input type="text" placeholder="novo nome de usuário" name="new_username"> <input type="submit" value="Trocar">
                         </form>
                     </div>
                     <p>Trocar senha: <a><b>Clique aqui</b></a></p>
-                    <p>Deletar conta: <a><b>Clique aqui</b></a></p>
+                    <button id="delete-account-button">Deletar conta</button>
                     <button id="logout-button">Sair da conta</button>
                 </div>
             </div>
@@ -68,7 +68,8 @@
 
     </div>
 
-    <script type="module" src="./assets/scripts/conta/conta.js"></script>
-    <script type="module" src="./assets/scripts/login-handler.js"></script>
+    <script type="module" src="./assets/scripts/account/conta.js"></script>
+    <script type="module" src="./assets/scripts/account/user-handler.js"></script>
+    <script type="module" src="./assets/scripts/account/login-handler.js"></script>
 </body>
 </html>
