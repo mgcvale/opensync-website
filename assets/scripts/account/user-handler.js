@@ -121,5 +121,6 @@ export function getUserData() {
     })
 }
 
-if(document.getElementById("account-info-container").style.display != 'none')
-    getUserData();  
+if(getCookie('access_token')){
+    getUserData();
+}
