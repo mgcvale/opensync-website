@@ -15,7 +15,7 @@ document.getElementById("signin-form").addEventListener('submit', function(event
     console.log(formData);
     if(jsonData.password != document.getElementById("confirm-password").value) {
         alert("As duas senhas não se coincidem!");
-        return;2
+        return;
     }
 
     signIn(jsonData);
@@ -33,6 +33,8 @@ function signIn(jsonData) {
     })
     .then(response => {
         if(!response.ok) {
+            if(response.status == 409)
+                alert("Já existe um usuário com este username!");
             throw new Error("HTTP Error: " + response.status);
         }
         return response.json;
