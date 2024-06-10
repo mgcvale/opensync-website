@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jersey+25&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -19,12 +18,31 @@
             <a href="./index.html">Home</a>
             <a href="#" id="page-anchor">Fotos</a>
             <a href="./conta.html">Conta</a>
-            <a href="./planos.html">Planos</a>
             <a href="./sobre.html">Sobre</a>
         </nav>
 
         <a class="no-animation" href="./index.html"><img id="logo" src="./assets/images/hyprsync-oneline.png"></a>
     </header>
 
+    <main class="flex-container">
+
+        <section class="vertical-display">
+            <p id="login-warning">Você não está logado! <a href="conta.html">Faca login ou registre-se</a> para fazer upload de fotos</p>
+            <div id="user-content">
+                <h1>Upload</h1>
+                <form id="image-upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="images" multiple>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+    <script type="module" src="./assets/scripts/file/file-handler.js"></script>
+    <script type="module" src="./assets/scripts/file/display.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import { checkForLogin } from "./conta.js";
+import { checkForLogin } from "./display.js";
 import { getCookie, deleteCookie, setCookie } from "../cookie-manager.js";
 
 

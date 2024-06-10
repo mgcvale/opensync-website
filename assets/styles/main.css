@@ -8,7 +8,7 @@ form {
     max-width: 300px;
     border: 2px solid var(--fg);
     border-radius: 4px;
-    padding: 40px;
+    padding: 30px 40px;
 }
 
 label {
@@ -27,6 +27,7 @@ input {
     border: 2px solid var(--bg4);
     border-radius: 4px;
     padding: 4px;
+    margin: 4px 6px;
     transition: .3s;
     display: inherit;
 }

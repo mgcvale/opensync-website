@@ -1,6 +1,5 @@
 import { getCookie } from "../cookie-manager.js";
 
-
 document.getElementById("signin-form").addEventListener('submit', function(event) {
     event.preventDefault();
 
