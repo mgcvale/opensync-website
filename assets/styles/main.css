@@ -1,5 +1,14 @@
 @import url(./reset.css);
 
+main{
+    padding: 20px;
+}
+
+input[type="submit"] {
+    min-width: 15%;
+    text-align: center;
+}
+
 form {
     border: 2px solid var(--fg);
     border-radius: 4px;
@@ -82,4 +91,42 @@ input[type="submit"]:hover {
     filter: drop-shadow(2px 2px 2px var(--fg-shadow));
     display: inline;
     margin: 1em;
+}
+
+#content-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: 88vh;
+}
+
+#centered-content-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 88vh;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+hr {
+    margin: 4vh auto;
+    opacity: 0;
+    background-color: var(--fg);
+}
+
+h2 {
+    font-family: "Silkscreen", "Fira Code", "Fira Sans", monospace;
+    font-weight: 400;
 }

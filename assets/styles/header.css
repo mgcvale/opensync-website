@@ -7,8 +7,8 @@ header {
     top: 0;
     
     display: flex;
-    justify-content:space-between;
-    overflow:visible;
+    justify-content: space-between;
+    overflow: visible;
 
     background-color: var(--bg);
     z-index: 1;
@@ -18,7 +18,7 @@ nav {
     display: inline-flex;
     justify-content: left;
     align-items: center;
-    padding-bottom: 4px;
+    padding: 20px;
     border-bottom: 0.1em solid var(--fg);
     padding-right: 5vw;
 }

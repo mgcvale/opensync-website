@@ -1,6 +1,14 @@
 @import url(./styles/reset.css);
 @import url(./styles/header.css);
+@import url(./styles/main.css);
 @import url(./styles/form.css);
-@import url(./styles/content.css);
-@import url(./styles/fotos/fotos.css);
-@import url(./styles/conta/info-conta.css);
+@import url(./styles/content.css); 
+
+.flex-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
