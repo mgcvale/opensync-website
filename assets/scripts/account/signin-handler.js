@@ -36,7 +36,7 @@ function signIn(jsonData) {
                 alert("Já existe um usuário com este username!");
             throw new Error("HTTP Error: " + response.status);
         }
-        return response.json;
+        return response.json();
     })
     .then(data => {
         console.log(data);

@@ -29,24 +29,18 @@
 
         <section class="vertical-display">
             <p id="login-warning">Você não está logado! <a href="conta.html">Faca login ou registre-se</a> para fazer upload de fotos</p>
-            <div id="user-content">
+            <div id="user-content" class="vertical-display">
                 <h1>Upload</h1>
                 <form id="image-upload" method="POST" enctype="multipart/form-data">
                     <input type="file" name="images" multiple>
                     <input type="submit">
                 </form>
+                <ul class="gallery">
+                </ul>
             </div>
         </section>
     </main>
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
+    
     <script type="module" src="./assets/scripts/file/file-handler.js"></script>
     <script type="module" src="./assets/scripts/file/display.js"></script>
 </body>
