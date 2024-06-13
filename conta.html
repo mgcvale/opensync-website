@@ -25,10 +25,10 @@
         <a class="no-animation" href="./index.html"><img id="logo" src="./assets/images/hyprsync-oneline.png"></a>
     </header>
 
-    <div id="content-div" class="flex-container">
-        <div id="login-form-container">
-            <h1>Login</h1> <br>
-
+    <main>
+        <section>
+            <h1>Login</h1>
+    
             <form id="login-form">
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username-input" placeholder="username">
@@ -39,11 +39,11 @@
                 <input type="submit" value="Entrar" id="submit">
                 <p>Não tem uma conta? Crie <a href="create-user.html">Aqui</a></p>
             </form>
-        </div>
-
-        <section id="account-info-container">
+        </section>
+        
+        <!-- <section>
             <h2>Informacões sobre sua conta</h2>
-
+        
             <div id="infos-conta">
                 <div id="infos-esquerda">
                     <p id="username">Username: </p>
@@ -65,10 +65,8 @@
                     <button id="logout-button">Sair da conta</button>
                 </div>
             </div>
-
-        </section>
-
-    </div>
+        </section> -->
+    </main>
 
     <script type="module" src="./assets/scripts/account/display.js"></script>
     <script type="module" src="./assets/scripts/account/user-handler.js"></script>
