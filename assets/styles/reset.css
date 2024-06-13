@@ -31,11 +31,21 @@ body {
     font-family: var(--font-main);
 }
 
+section{
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 [contenteditable="true"]:focus {
     outline: none;
 }
 
 h1{
+    margin-bottom: 20px;
     color: var(--fg);
     font-size: 2.1em;
     text-align: center;

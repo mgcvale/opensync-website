@@ -1,12 +1,12 @@
 @import url(./reset.css);
 
-main{
-    padding: 0 20px;
-}
-
 form {
     border: 2px solid var(--fg);
     border-radius: 4px;
+}
+
+form,
+.card{
     padding: 30px 40px;
 }
 
@@ -63,10 +63,6 @@ button {
     font-weight: 400;
     transition: .3s;
     cursor: pointer;
-    background-color: var(--bg-shadow);
-    color: var(--fg);
-    border: 2px solid var(--bg3);
-    border-radius: 6px;
 }
 
 button:hover {
@@ -77,4 +73,26 @@ button:hover {
 input[type="submit"]:hover {
     transform: scale(1.05);
     transition: .3s;
+}
+
+button,
+.card{
+    background-color: var(--bg-shadow);
+    color: var(--fg);
+    border: 2px solid var(--bg3);
+    border-radius: 6px;
+}
+
+.plans{
+    display: flex;
+    gap: 16px;
+}
+
+.card{
+    max-width: 600px;
+    text-align: center;
+}
+
+.card p{
+    text-indent: 1em;
 }
