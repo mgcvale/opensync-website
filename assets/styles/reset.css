@@ -45,6 +45,7 @@ section{
 }
 
 h1{
+    margin-bottom: 20px;
     color: var(--fg);
     font-size: 2.1em;
     text-align: center;
