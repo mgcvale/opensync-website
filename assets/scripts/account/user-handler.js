@@ -49,7 +49,6 @@ function changeUsername(jsonData) {
     });
 }
 
-
 //delete account button
 document.getElementById("delete-account-button").addEventListener('click', function() {
 
@@ -61,8 +60,6 @@ document.getElementById("delete-account-button").addEventListener('click', funct
     }
     deleteUser(jsonData);
 });
-
-
 
 function deleteUser(jsonData) {
     const url = "http://localhost:5000/users/delete";

@@ -24,6 +24,7 @@ document.getElementById("login-form").addEventListener('submit', function(event)
     })
     .then(response => {
         if (!response.ok) {
+            alert("O login falhou! cheque suas credenciais");
             throw new Error("HTTP error " + response.status);
         }
         return response.json();
