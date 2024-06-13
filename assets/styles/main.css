@@ -74,3 +74,9 @@ input[type="submit"]:hover {
     transform: scale(1.05);
     transition: .3s;
 }
+
+.card{
+    max-width: 600px;
+    text-align: justify;
+    text-indent: 1em;
+}
