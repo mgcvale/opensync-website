@@ -88,6 +88,10 @@ a::after {
     transition: opacity 300ms, transform 300ms;
 }
 
+a.no-animation::after {
+    opacity: 0;
+}
+
 a:hover::after,
 #page-anchor::after {
     transform: scale(1); 
