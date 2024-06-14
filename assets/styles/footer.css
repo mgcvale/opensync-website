@@ -1,0 +1,9 @@
+@import url(./reset.css);
+
+footer{
+    width: 100%;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
