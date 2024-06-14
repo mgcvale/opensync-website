@@ -62,7 +62,7 @@ function populateImages(jsonData) {
     const gallery = document.getElementsByClassName("gallery")[0];
     const files = JSON.parse(jsonData.files);
     files.forEach(file => {
-        const img = document.createElement('img');
+        const li = document.createElement('li')
         const a = document.createElement("a");
         const image = document.createElement("img");
         image.src = `data:image/jpeg;base64,${file.image}`;
