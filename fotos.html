@@ -7,6 +7,7 @@
     <title>HyprSync - Fotos</title>
 
     <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/styles/modal.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +43,14 @@
                 <ul class="gallery">
                 </ul>
             </div>
+            <div class="modal" id="gallery-modal">
+                <div class="modal-content">
+                    <img id="modal-image">
+                    <a href="#" id="modal-download">Download</a>
+                    <button id="modal-delete">Deletar</button>
+                    <button id="modal-close">Fechar</button>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -51,5 +60,6 @@
 
     <script type="module" src="./assets/scripts/file/file-handler.js"></script>
     <script type="module" src="./assets/scripts/file/display.js"></script>
+    <script type="module" src="./assets/scripts/file/modal.js"></script>
 </body>
 </html>
