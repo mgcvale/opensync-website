@@ -25,6 +25,10 @@ nav a {
     margin: 0 8px;
 }
 
+nav ul{
+    display: flex;
+}
+
 #logo {
     height: 9vh;
 }

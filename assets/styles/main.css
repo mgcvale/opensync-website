@@ -106,6 +106,10 @@ table, th, td {
     border: 1px solid white;
 }
 
+th{
+    font-size: 1.1em;
+}
+
 th, td {
     max-width: 200px;
     padding: 12px;
