@@ -90,9 +90,24 @@ button,
 
 .card{
     max-width: 600px;
+    text-align: justify;
+}
+
+.plans .card{
+    max-width: 300px;
     text-align: center;
 }
 
 .card p{
     text-indent: 1em;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    max-width: 200px;
+    padding: 12px;
+    text-align: center;
 }
