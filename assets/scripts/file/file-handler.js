@@ -64,10 +64,14 @@ function populateImages(jsonData) {
     files.forEach(file => {
         const img = document.createElement('img');
         const a = document.createElement("a");
-        img.src = `data:image/jpeg;base64,${file.image}`;
-        a.href="http://localhost:5000/files/download/" + getCookie("access_token") + "/" + file;
-        a.appendChild(img);
-        gallery.appendChild(a);
+        const image = document.createElement("img");
+        image.src = `data:image/jpeg;base64,${file.image}`;
+        a.href="http://localhost:5000/files/download/" + getCookie("access_token") + "/" + file.name;
+        
+        image.style.height = '64px';
+        a.appendChild(image);
+        li.appendChild(a);
+        gallery.appendChild(li);
     });
 
 }
