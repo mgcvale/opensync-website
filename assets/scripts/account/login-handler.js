@@ -24,6 +24,7 @@ document.getElementById("login-form").addEventListener('submit', function(event)
     })
     .then(response => {
         if (!response.ok) {
+            alert("Erro no login; verifique suas credenciais e tente novamente");
             throw new Error("HTTP error " + response.status);
         }
         return response.json();

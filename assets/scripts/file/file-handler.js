@@ -62,12 +62,12 @@ function populateImages(jsonData) {
     const gallery = document.getElementsByClassName("gallery")[0];
     const files = JSON.parse(jsonData.files);
     files.forEach(file => {
-        const li = document.createElement("li");
+        const img = document.createElement('img');
         const a = document.createElement("a");
-        a.innerHTML = file;
+        img.src = `data:image/jpeg;base64,${file.image}`;
         a.href="http://localhost:5000/files/download/" + getCookie("access_token") + "/" + file;
-        li.appendChild(a);
-        gallery.appendChild(li);
+        a.appendChild(img);
+        gallery.appendChild(a);
     });
 
 }

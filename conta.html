@@ -26,7 +26,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="login-form-container">
             <h1>Login</h1>
     
             <form id="login-form">
@@ -41,31 +41,16 @@
             </form>
         </section>
         
-        <!-- <section>
-            <h2>Informacões sobre sua conta</h2>
-        
-            <div id="infos-conta">
-                <div id="infos-esquerda">
-                    <p id="username">Username: </p>
-                    <p id="privilegios">Privilégios: </p>
-                    <p>Data de cadastro: </p>
-                    <p>Espaco disponível: </p>
-                    <p>Espaco utilizado: </p>
-                </div>
-                <div id="infos-dreita">
-                    <div id="inline-form">
-                        <p>Trocar nome de usuário: </p> 
-                        <form id="username-change-form">
-                            <input type="text" placeholder="novo nome de usuário" name="new_username">
-                            <input type="submit" value="Trocar">
-                        </form>
-                    </div>
-                    <p>Trocar senha: <a><b>Clique aqui</b></a></p>
+        <section id="account-info-container">
+            <h1 id="username-header">logado como:</h1>
+            <h2 id="privilege"></h2>
+                <div class="card vertical-display">
+                    <a href="change-username.html">Trocar nome de usuário</a>
+                    <a href="change-password.html">Trocar senha</a>
                     <button id="delete-account-button">Deletar conta</button>
                     <button id="logout-button">Sair da conta</button>
                 </div>
-            </div>
-        </section> -->
+        </section>
     </main>
 
     <footer>
