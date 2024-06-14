@@ -1,4 +1,5 @@
 import { getCookie } from "../cookie-manager.js";
+import { imagesLoaded } from "./modal.js";
 
 document.getElementById("image-upload").addEventListener('submit', function(event) {
     event.preventDefault();
@@ -62,13 +63,18 @@ function populateImages(jsonData) {
     const gallery = document.getElementsByClassName("gallery")[0];
     const files = JSON.parse(jsonData.files);
     files.forEach(file => {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.innerHTML = file;
-        a.href="http://localhost:5000/files/download/" + getCookie("access_token") + "/" + file;
-        li.appendChild(a);
+        const li = document.createElement('li');
+        const image = document.createElement("img");
+        image.src = `data:image/jpeg;base64,${file.image}`;
+        image.classList.add('gallery-image');
+        image.id = file.name;
+        
+        image.style.height = '64px';
+        li.appendChild(image);
         gallery.appendChild(li);
     });
+
+    imagesLoaded();
 
 }
 
