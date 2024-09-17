@@ -87,16 +87,16 @@ button,
 
 .plans{
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
 .card{
-    max-width: 600px;
     text-align: justify;
 }
 
 .plans .card{
-    max-width: 300px;
+    flex: .2;
     text-align: center;
     cursor: pointer;
     transition: 300ms;
@@ -108,16 +108,14 @@ button,
     border-color: var(--bg4);
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 1256px) {
     .plans{
-        width: 100%;
         align-items: center;
         flex-direction: column;
     }
 
     .plans .card{
-        flex: 1;
-        max-width: 75%;
+        max-width: 80%;
     }
 }
 
