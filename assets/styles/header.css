@@ -29,6 +29,6 @@ nav ul{
     display: flex;
 }
 
-#logo {
-    height: 9vh;
+.logo {
+    max-width: 416px;
 }

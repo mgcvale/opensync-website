@@ -104,3 +104,7 @@ a:hover::after,
 ul {
     list-style-type: none;
 }
+
+img{
+    width: 100%;
+}
