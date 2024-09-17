@@ -48,8 +48,6 @@ h1{
     margin-bottom: 12px;
     color: var(--fg);
     font-size: 2.1em;
-    text-align: center;
-    text-wrap: nowrap;
     filter: drop-shadow(0 0 6px var(--fg));
 }
 
@@ -58,6 +56,7 @@ h2 {
     font-family: var(--font-title);
     font-weight: 400;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 h3 {
