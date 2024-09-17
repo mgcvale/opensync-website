@@ -49,10 +49,11 @@ nav ul{
         display: none;
         flex-direction: column;
         width: 100%;
+        padding: 6px;
         position: absolute;
-        top: 120px;
+        top: 100%;
         left: 0;
-        background-color: #161921;
+        background-color: #191621;
     }
 
     .menu-toggle {
