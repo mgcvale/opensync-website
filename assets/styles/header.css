@@ -29,6 +29,41 @@ nav ul{
     display: flex;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
 .logo {
     max-width: 416px;
+}
+
+  
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        background-color: #161921;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle-checkbox:checked ~ ul {
+        display: flex;
+    }
+
+    header label{
+        font-size: 2.4em;
+    }
 }
