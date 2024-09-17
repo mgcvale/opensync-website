@@ -108,6 +108,19 @@ button,
     border-color: var(--bg4);
 }
 
+@media (max-width: 1028px) {
+    .plans{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .plans .card{
+        flex: 1;
+        max-width: 75%;
+    }
+}
+
 .card p{
     text-indent: 1em;
 }
