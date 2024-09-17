@@ -40,6 +40,12 @@ section{
     flex-direction: column;
 }
 
+::selection {
+    background-color: var(--fg);
+    color: var(--bg2);
+    text-shadow: 2px 3px 6px var(--fg);
+}  
+
 [contenteditable="true"]:focus {
     outline: none;
 }
