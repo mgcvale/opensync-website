@@ -85,6 +85,7 @@ button,
     border-radius: 6px;
 }
 
+
 .plans{
     display: flex;
     justify-content: center;
@@ -93,6 +94,8 @@ button,
 
 .card{
     text-align: justify;
+    max-width: 60%;
+    margin: 2em;
 }
 
 .plans .card{
@@ -117,6 +120,11 @@ button,
     .plans .card{
         max-width: 80%;
     }
+
+    .card {
+        max-width: 90%;
+
+    }
 }
 
 .card p{
@@ -135,4 +143,25 @@ th, td {
     max-width: 200px;
     padding: 12px;
     text-align: center;
+}
+
+#inline-logo,
+#inline-logo::before {
+    background-size: 500%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: var(--fg);
+}
+
+#inline-logo:hover,
+#inline-logo:hover::before {
+    color: transparent;
+    background-image: linear-gradient(to right, var(--fg) 0% 50%, var(--fg-shadow) 50% 100%);
+    animation: loader 1.2s forwards;
+}
+
+@keyframes loader {
+    100% {
+      background-position: -100% 0;
+    }
 }

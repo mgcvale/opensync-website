@@ -10,6 +10,7 @@ header {
 
     background-color: var(--bg);
     z-index: 1;
+    overflow: shown;
 }
 
 nav {
@@ -18,6 +19,7 @@ nav {
     
     padding: 0 5vw 0 20px;
     border-bottom: 0.1em solid var(--fg);
+    max-height: 4em;
 }
 
 nav a {
@@ -45,6 +47,11 @@ nav ul{
 
   
 @media (max-width: 768px) {
+
+    header nav {
+        max-height: fit-content;
+    }
+
     header nav ul {
         display: none;
         flex-direction: column;
