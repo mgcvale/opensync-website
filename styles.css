@@ -197,12 +197,12 @@ button {
 
 .load-2 {
   opacity: 0;
-  animation: 1s ease-out 0s 1 slideUp2 forwards;
+  animation: 1s ease-out 0s 1 slideUp1 forwards;
 }
 
 .load-3 {
   opacity: 0;
-  animation: 1s ease-out 0s 1 slideUp3 forwards;
+  animation: 1s ease-out 0s 1 slideUp2 forwards;
 }
 
 .animation-delay-1 {
@@ -459,7 +459,7 @@ button {
 
 .background-overlay {
   position: fixed;
-  top: -60%;
+  top: -40%;
   left: 10;
   height: 120%;
   width: 100%;
@@ -467,8 +467,9 @@ button {
   overflow: hidden;
   background: #0f2027;
   background: linear-gradient(to bottom, #0f2027, #203a43);
-  background: url(/assets/img/grain-medium.webp), radial-gradient(circle, rgba(21, 70, 90, 0.3) 0%, rgba(21, 70, 90, 0.15) 50%, rgba(6, 100, 120, 0.1) 100%, transparent 100%);
-  mask-image: radial-gradient(50% 50% at 50% 50%, white, transparent);
+  background: url(/assets/img/grain-medium.webp), radial-gradient(100% 80% at top, rgba(6, 182, 212, 0.3) 0%, rgba(14, 165, 233, 0.1), transparent);
+  -webkit-mask-image: radial-gradient(100% 80% at top, white, rgb(0, 0, 0), rgb(0, 0, 0), transparent);
+  mask-image: radial-gradient(100% 80% at top, white, rgb(0, 0, 0), rgb(0, 0, 0), transparent);
 }
 
 @media only screen and (max-width: 768px) {
