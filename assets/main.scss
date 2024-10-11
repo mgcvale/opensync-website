@@ -1,0 +1,45 @@
+@use 'style/utilities.scss';
+@use 'reset.scss';
+@import 'style/header.scss';
+@import 'reset.scss';
+@import 'style/_mixins.scss';
+@import 'background.scss';
+
+.container {
+    padding-bottom: 5vh;
+    margin: auto;
+    max-width: 80%;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            margin: .8em 0;
+        }
+    
+        h2 {
+            margin: .6em 0;
+            width: 600px;
+            max-width: 80%;
+            align-self: center;
+        }
+    
+        h3 {
+            margin: .6em 0;
+            width: 500px;
+            max-width: 70%;
+            align-self: center;
+        }
+    }
+
+    button {
+        align-self: center;
+    }
+}

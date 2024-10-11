@@ -1,0 +1,131 @@
+@import '../reset.scss';
+@import '_mixins.scss';
+
+.flex {
+    display: flex;
+}
+ 
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.accent {
+    color: $accent;
+}
+
+.accent-gradient {
+    @include gradient-text($accent, lighten(saturate($accent, 40%), 5%));
+}
+
+.text-gradient {
+    @include gradient-text($fg, darken($fg, 20%));
+}
+
+.accent-glow {
+    @include glow($accent, 6, 0.4);
+}
+
+.text-accent-glow {
+    @include text-glow($accent, 6, 0.4);
+}
+
+.text-accent-glow-strong {
+    @include text-glow($accent, 8, 1);
+}
+
+.text-hover-glow-accent-s {
+    transition: 200ms;
+    &:hover {
+        transition: 300ms;
+        text-shadow: 
+        0 0 4px $accent,
+        0 0 8px $accent,
+        0 0 12px $accent;
+    }
+}
+
+.text-hover-glow-accent-m {
+    $glow-color: rgba($accent, 0.75);
+    transition: 350ms ease-out;
+    &:hover {
+        transition: 400ms;
+        text-shadow: 
+        0 0 8px $glow-color,
+        0 0 16px $glow-color,
+        0 0 24px $glow-color;
+    }
+}
+
+.hover-grow {
+    transition: 200ms;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.emphasis-button {
+    @include glow($accent, 8, 0.3);
+    border: 3px solid saturate($accent, 100%);
+    transition: 300ms;
+    transform: scale(1.5);
+
+    &:hover {
+        @include glow($accent, 10, 0.7);
+        $parent-bg: inherit;
+        background-color: darken($base, 6%);
+        transform: scale(1.58);
+    }
+}
+
+.hover-blur {
+    overflow: hidden !important;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+    background: rgba($accent, 0.8);
+    filter: blur(56px);
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+.separator {
+    cursor: default;
+}
+
+
+.underline-animation {
+    position: relative;
+    color: $fg;
+    padding: 0.2em 0;
+
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.05em;
+        background-color: $fg;
+        opacity: 1;
+        transform: scale(0);
+        transform-origin: center;
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    &:hover::after {
+        transform: scale(1); 
+    }
+}

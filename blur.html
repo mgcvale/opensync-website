@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #1a1a1a;
+    }
+
+    .blur {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 3em;
+        height: 3em;
+        background: white;
+        transform: translate(-50%, -50%);
+        filter: blur(32px);
+        border-radius: 50%;  
+        pointer-events: none; 
+        z-index: -1;
+    }
+
+    .blur-container {
+        background: rgba(0, 0, 0, 0.4);
+        width: 200px;
+        height: 200px;
+        border-radius: 1em;
+        overflow: hidden !important;
+
+    }
+
+    .container {
+        display: flex;
+        gap: 3em;
+        margin: 3em;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="blur-container">
+            <div class="blur"></div>
+        </div>
+        <div class="blur-container">
+            <div class="blur"></div>
+        </div>
+        <div class="blur-container">
+            <div class="blur"></div>
+        </div>
+    </div>
+
+  <script>
+    const blur = document.getElementsByClassName('blur');
+
+    document.addEventListener('mousemove', (e) => {
+        Array.from(blur).forEach(element => {
+            console.log("pageX: " + e.pageX);
+            console.log("parentX: " + element.parentElement.getBoundingClientRect().left);
+            element.style.left = `${e.pageX - element.parentElement.getBoundingClientRect().left}px`;
+            element.style.top = `${e.pageY - element.parentElement.getBoundingClientRect().top}px`;
+        });
+    });
+  </script>
+</body>
+</html>

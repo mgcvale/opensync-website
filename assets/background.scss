@@ -1,0 +1,23 @@
+@use 'style/_mixins.scss';
+
+.background-overlay {
+    position: fixed;
+    top: -50%;
+    left: 10;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: #0f2027; 
+    background: linear-gradient(to bottom, #0f2027, #203a43);
+    background: url(/assets/img/grain.webp),radial-gradient(50% 50% at 50% 50%,rgb(6 100 120 / 30%) 0%,rgb(21 70 90 / 30%),transparent);
+    mask-image: radial-gradient(50% 50% at 50% 50%,white,rgba(0,0,0,1),rgba(0,0,0,1),transparent)
+}
+
+
+@media only screen and (max-width: 768px) {
+    .background-overlay {
+        transform: scalex(2);
+    }
+}
+  

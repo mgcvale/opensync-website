@@ -1,0 +1,64 @@
+@import '../reset.scss';
+@import '_mixins.scss';
+
+header {
+    width: calc(100vw - (max(1vh, 1vw) * 2));
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: max(1vh, 1vw);
+
+    display: flex;
+    justify-content: space-between;
+
+    * {
+        backdrop-filter: blur(10px);
+    }
+
+    svg {
+        color: $fg;
+    }
+
+    > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5em;
+        
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 9999px;
+        gap: .5em;
+        padding: .5em;
+
+        svg {
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+
+    > nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5em;
+
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 9999px;
+        gap: .5em;
+        padding: .5em;
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1em;
+            gap: .5em;
+    
+            svg {
+                height: 1.5em;
+                width: 1.5em;
+            }
+        }
+    }
+
+}
