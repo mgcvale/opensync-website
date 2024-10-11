@@ -13,3 +13,17 @@
 @mixin text-glow($base-color, $blur, $strength) {
     text-shadow: 0 0 #{$blur}px rgba($base-color, $strength);
 }
+
+@mixin blur-blob($bg-color, $blur-radius) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+    background: $bg-color;
+    filter: blur($blur-radius);
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}

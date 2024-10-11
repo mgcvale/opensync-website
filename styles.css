@@ -43,15 +43,12 @@ button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
   font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background-color: rgb(37.7403846154, 39.25, 40.7596153846);
+  background: rgba(0, 57, 80, 0.1);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
   border: none;
   transition: 200ms;
-}
-button:hover {
-  background-color: rgb(62.2596153846, 64.75, 67.2403846154);
 }
 
 .flex {
@@ -115,26 +112,23 @@ button:hover {
 }
 
 .hover-grow {
-  transition: 200ms;
+  transition: transform 200ms;
 }
 .hover-grow:hover {
-  transform: scale(1.03);
-}
-
-.emphasis-button {
-  filter: drop-shadow(0 0 8px rgba(32, 106, 115, 0.3));
-  border: 3px solid rgb(0, 131.0602409639, 147);
-  transition: 300ms;
-  transform: scale(1.5);
-}
-.emphasis-button:hover {
-  filter: drop-shadow(0 0 10px rgba(32, 106, 115, 0.7));
-  background-color: rgb(35.2884615385, 36.7, 38.1115384615);
-  transform: scale(1.58);
+  transform: scale(1.05) translateY(0);
 }
 
 .hover-blur {
   overflow: hidden !important;
+}
+
+.accent-border {
+  border: 0.15em solid #206a73;
+}
+
+.blurred-bg {
+  background: linear-gradient(to bottom, #0f2027, #203a43);
+  background: url(/assets/img/grain-soft.webp), rgba(0, 57, 80, 0.1);
 }
 
 .blur {
@@ -145,6 +139,20 @@ button:hover {
   height: 3em;
   background: rgba(32, 106, 115, 0.8);
   filter: blur(56px);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.blur-soft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3em;
+  height: 3em;
+  background: rgba(32, 106, 115, 0.6);
+  filter: blur(64px);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -178,6 +186,67 @@ button:hover {
   transform: scale(1);
 }
 
+.large {
+  font-size: 2rem;
+}
+
+.load-1 {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideUp1 forwards;
+}
+
+.load-2 {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideUp2 forwards;
+}
+
+.load-3 {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideUp3 forwards;
+}
+
+.animation-delay-1 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-2 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-3 {
+  animation-delay: 300ms;
+}
+
+@keyframes slideUp1 {
+  0% {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp2 {
+  0% {
+    opacity: 0;
+    transform: translateY(20vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @font-face {
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
@@ -223,15 +292,12 @@ button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
   font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background-color: rgb(37.7403846154, 39.25, 40.7596153846);
+  background: rgba(0, 57, 80, 0.1);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
   border: none;
   transition: 200ms;
-}
-button:hover {
-  background-color: rgb(62.2596153846, 64.75, 67.2403846154);
 }
 
 @font-face {
@@ -279,15 +345,12 @@ button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
   font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background-color: rgb(37.7403846154, 39.25, 40.7596153846);
+  background: rgba(0, 57, 80, 0.1);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
   border: none;
   transition: 200ms;
-}
-button:hover {
-  background-color: rgb(62.2596153846, 64.75, 67.2403846154);
 }
 
 header {
@@ -386,20 +449,17 @@ button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
   font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background-color: rgb(37.7403846154, 39.25, 40.7596153846);
+  background: rgba(0, 57, 80, 0.1);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
   border: none;
   transition: 200ms;
 }
-button:hover {
-  background-color: rgb(62.2596153846, 64.75, 67.2403846154);
-}
 
 .background-overlay {
   position: fixed;
-  top: -50%;
+  top: -60%;
   left: 10;
   height: 120%;
   width: 100%;
@@ -407,8 +467,8 @@ button:hover {
   overflow: hidden;
   background: #0f2027;
   background: linear-gradient(to bottom, #0f2027, #203a43);
-  background: url(/assets/img/grain.webp), radial-gradient(50% 50% at 50% 50%, rgba(6, 100, 120, 0.3) 0%, rgba(21, 70, 90, 0.3), transparent);
-  mask-image: radial-gradient(50% 50% at 50% 50%, white, rgb(0, 0, 0), rgb(0, 0, 0), transparent);
+  background: url(/assets/img/grain-medium.webp), radial-gradient(circle, rgba(21, 70, 90, 0.3) 0%, rgba(21, 70, 90, 0.15) 50%, rgba(6, 100, 120, 0.1) 100%, transparent 100%);
+  mask-image: radial-gradient(50% 50% at 50% 50%, white, transparent);
 }
 
 @media only screen and (max-width: 768px) {

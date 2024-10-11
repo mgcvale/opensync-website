@@ -24,17 +24,12 @@ function updateBlurs() {
     const scrollX = window.scrollX;
     const scrollY = window.scrollY;
     
-    // Calculate target positions
     const targetX = mouseX - (rect.left + scrollX);
     const targetY = mouseY - (rect.top + scrollY);
     
-    // Smoothly interpolate to target position
-    // Adjust the factor (0.1) to control the smoothing amount
-    // Lower = smoother but more delay, Higher = more responsive but less smooth
     blurPositions[index].currentX = lerp(blurPositions[index].currentX, targetX, 0.2);
     blurPositions[index].currentY = lerp(blurPositions[index].currentY, targetY, 0.2);
     
-    // Apply the smoothed position
     element.style.left = `${blurPositions[index].currentX}px`;
     element.style.top = `${blurPositions[index].currentY}px`;
   });

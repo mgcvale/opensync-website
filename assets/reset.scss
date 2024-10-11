@@ -51,14 +51,10 @@ button {
     padding: .5em 2em;
     font-size: 1.2rem;
     font-family: 'Blender Pro Medium' 'Work Sans' Arial, Helvetica, sans-serif;
-    background-color: darken($base, 5%);
+    background: rgba($dark-accent, 0.1);
     border-radius: .5em;
     color:#d1d0c5;
     cursor: pointer;
     border: none;
     transition: 200ms;
-
-    &:hover {
-        background-color: lighten($base, 5%);
-    }
 }
