@@ -1,4 +1,4 @@
-$accent: #206a73;
+$accent: #207a83;
 $dark-accent: #003950;
 $base: #323436;
 $fg: #d1d0c5;
@@ -7,6 +7,11 @@ $shadow: #525456;
 @font-face {
     font-family: "Blender Pro Medium";
     src: url(font/BlenderProMedium.ttf);
+}
+
+@font-face {
+    font-family: "Monaco";
+    src: url(/assets/font/Monaco.ttf);
 }
 
 * {
@@ -39,6 +44,10 @@ h2 {
 }
 
 h3 {
+    
+}
+
+h4 {
     font-size: max(1.6vw, vh);
     font-weight: 600;
 }
@@ -47,14 +56,17 @@ section {
     height: 100vh;
 }
 
-button {
+button, .button {
     padding: .5em 2em;
     font-size: 1.2rem;
-    font-family: 'Blender Pro Medium' 'Work Sans' Arial, Helvetica, sans-serif;
-    background: rgba($dark-accent, 0.1);
+    font-family: "Monaco", Helvetica, sans-serif;
+    background: rgba($dark-accent, 0.15);
     border-radius: .5em;
     color:#d1d0c5;
     cursor: pointer;
+    border: 10px solid rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     border: none;
     transition: 200ms;
 }

@@ -2,6 +2,10 @@
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
 }
+@font-face {
+  font-family: "Monaco";
+  src: url(/assets/font/Monaco.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +34,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+h4 {
   font-size: max(1.6vw, vh);
   font-weight: 600;
 }
@@ -39,14 +43,17 @@ section {
   height: 100vh;
 }
 
-button {
+button, .button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
-  font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background: rgba(0, 57, 80, 0.1);
+  font-family: "Monaco", Helvetica, sans-serif;
+  background: rgba(0, 57, 80, 0.15);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
+  border: 10px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   border: none;
   transition: 200ms;
 }
@@ -64,11 +71,11 @@ button {
 }
 
 .accent {
-  color: #206a73;
+  color: #207a83;
 }
 
 .accent-gradient {
-  background: linear-gradient(45deg, #206a73, rgb(3.0510204082, 151.4058273912, 169.4489795918));
+  background: linear-gradient(45deg, #207a83, rgb(0, 171.3636363636, 188.5));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -84,15 +91,15 @@ button {
 }
 
 .accent-glow {
-  filter: drop-shadow(0 0 6px rgba(32, 106, 115, 0.4));
+  filter: drop-shadow(0 0 6px rgba(32, 122, 131, 0.4));
 }
 
 .text-accent-glow {
-  text-shadow: 0 0 6px rgba(32, 106, 115, 0.4);
+  text-shadow: 0 0 6px rgba(32, 122, 131, 0.4);
 }
 
 .text-accent-glow-strong {
-  text-shadow: 0 0 8px #206a73;
+  text-shadow: 0 0 8px #207a83;
 }
 
 .text-hover-glow-accent-s {
@@ -100,7 +107,7 @@ button {
 }
 .text-hover-glow-accent-s:hover {
   transition: 300ms;
-  text-shadow: 0 0 4px #206a73, 0 0 8px #206a73, 0 0 12px #206a73;
+  text-shadow: 0 0 4px #207a83, 0 0 8px #207a83, 0 0 12px #207a83;
 }
 
 .text-hover-glow-accent-m {
@@ -108,14 +115,14 @@ button {
 }
 .text-hover-glow-accent-m:hover {
   transition: 400ms;
-  text-shadow: 0 0 8px rgba(32, 106, 115, 0.75), 0 0 16px rgba(32, 106, 115, 0.75), 0 0 24px rgba(32, 106, 115, 0.75);
+  text-shadow: 0 0 8px rgba(32, 122, 131, 0.75), 0 0 16px rgba(32, 122, 131, 0.75), 0 0 24px rgba(32, 122, 131, 0.75);
 }
 
 .hover-grow {
-  transition: transform 200ms;
+  transition: 200ms;
 }
 .hover-grow:hover {
-  transform: scale(1.05) translateY(0);
+  transform: scale(1.05);
 }
 
 .hover-blur {
@@ -123,7 +130,9 @@ button {
 }
 
 .accent-border {
-  border: 0.15em solid #206a73;
+  border: 0.15em solid;
+  border-color: linear-gradient(235deg, rgba(32, 122, 131, 0), rgba(0, 0, 0, 0), rgba(32, 122, 131, 0));
+  border-radius: 2em;
 }
 
 .blurred-bg {
@@ -137,7 +146,7 @@ button {
   left: 0;
   width: 3em;
   height: 3em;
-  background: rgba(32, 106, 115, 0.8);
+  background: rgba(32, 122, 131, 0.8);
   filter: blur(56px);
   border-radius: 50%;
   pointer-events: none;
@@ -151,7 +160,7 @@ button {
   left: 0;
   width: 3em;
   height: 3em;
-  background: rgba(32, 106, 115, 0.6);
+  background: rgba(32, 122, 131, 0.6);
   filter: blur(64px);
   border-radius: 50%;
   pointer-events: none;
@@ -188,6 +197,28 @@ button {
 
 .large {
   font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start !important;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.align-left {
+  text-align: left;
+  align-self: left;
 }
 
 .load-1 {
@@ -247,9 +278,17 @@ button {
     transform: translateY(0);
   }
 }
+.accent-button {
+  border: 0.15em solid rgba(32, 122, 131, 0.5);
+}
+
 @font-face {
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
+}
+@font-face {
+  font-family: "Monaco";
+  src: url(/assets/font/Monaco.ttf);
 }
 * {
   margin: 0;
@@ -279,7 +318,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+h4 {
   font-size: max(1.6vw, vh);
   font-weight: 600;
 }
@@ -288,14 +327,17 @@ section {
   height: 100vh;
 }
 
-button {
+button, .button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
-  font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background: rgba(0, 57, 80, 0.1);
+  font-family: "Monaco", Helvetica, sans-serif;
+  background: rgba(0, 57, 80, 0.15);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
+  border: 10px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   border: none;
   transition: 200ms;
 }
@@ -304,6 +346,10 @@ button {
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
 }
+@font-face {
+  font-family: "Monaco";
+  src: url(/assets/font/Monaco.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -332,7 +378,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+h4 {
   font-size: max(1.6vw, vh);
   font-weight: 600;
 }
@@ -341,29 +387,33 @@ section {
   height: 100vh;
 }
 
-button {
+button, .button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
-  font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background: rgba(0, 57, 80, 0.1);
+  font-family: "Monaco", Helvetica, sans-serif;
+  background: rgba(0, 57, 80, 0.15);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
+  border: 10px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   border: none;
   transition: 200ms;
 }
 
 header {
   width: calc(100vw - max(1vh, 1vw) * 2);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   margin: max(1vh, 1vw);
+  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
 header * {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
 }
 header svg {
   color: #d1d0c5;
@@ -408,6 +458,10 @@ header > nav a svg {
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
 }
+@font-face {
+  font-family: "Monaco";
+  src: url(/assets/font/Monaco.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -436,7 +490,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+h4 {
   font-size: max(1.6vw, vh);
   font-weight: 600;
 }
@@ -445,14 +499,17 @@ section {
   height: 100vh;
 }
 
-button {
+button, .button {
   padding: 0.5em 2em;
   font-size: 1.2rem;
-  font-family: "Blender Pro Medium" "Work Sans" Arial, Helvetica, sans-serif;
-  background: rgba(0, 57, 80, 0.1);
+  font-family: "Monaco", Helvetica, sans-serif;
+  background: rgba(0, 57, 80, 0.15);
   border-radius: 0.5em;
   color: #d1d0c5;
   cursor: pointer;
+  border: 10px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   border: none;
   transition: 200ms;
 }
@@ -477,37 +534,60 @@ button {
     transform: scalex(2);
   }
 }
+.logo {
+  color: #d1d0c5;
+  transform: translateX(-10%);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1em;
+}
+
 .container {
-  padding-bottom: 5vh;
-  margin: auto;
+  padding: 5vh;
+  margin: 2em auto;
   max-width: 80%;
   width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 2vh;
 }
 .container div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  gap: 3em;
 }
-.container div h1 {
-  margin: 0.8em 0;
-}
-.container div h2 {
-  margin: 0.6em 0;
-  width: 600px;
-  max-width: 80%;
+.container div * {
   align-self: center;
 }
-.container div h3 {
-  margin: 0.6em 0;
-  width: 500px;
-  max-width: 70%;
-  align-self: center;
+.container div svg {
+  filter: drop-shadow(0 0 24px #207a83);
+  z-index: -10;
 }
 .container button {
   align-self: center;
+}
+
+.homepage {
+  height: 70vh;
+}
+
+.container-l {
+  padding: 5vh;
+  margin: 2em auto;
+  max-width: 80%;
+  width: 1250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

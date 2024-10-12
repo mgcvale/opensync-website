@@ -61,9 +61,9 @@
 }
 
 .hover-grow {
-    transition: transform 200ms;
+    transition: 200ms;
     &:hover {
-        transform: scale(1.05) translateY(0);
+        transform: scale(1.05);
     }
 }
 
@@ -72,7 +72,9 @@
 }
 
 .accent-border {
-    border: .15em solid $accent;
+    border: .15em solid;
+    border-color: linear-gradient(235deg, rgba($accent, 0), rgba(0, 0, 0, 0), rgba($accent, 0));
+    border-radius: 2em;
 }
 
 .blurred-bg {
@@ -122,6 +124,31 @@
 
 .large {
     font-size: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-start {
+    justify-content: flex-start !important;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.flex-grow {
+}
+
+.align-left {
+    text-align: left;
+    align-self: left;
 }
 
 
@@ -183,4 +210,8 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.accent-button {
+    border: .15em solid rgba($accent, 0.5);
 }
