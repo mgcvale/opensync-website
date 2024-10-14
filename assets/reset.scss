@@ -3,6 +3,7 @@ $dark-accent: #003950;
 $base: #323436;
 $fg: #d1d0c5;
 $shadow: #525456;
+$gray: #424446;
 
 @font-face {
     font-family: "Blender Pro Medium";
@@ -30,30 +31,37 @@ h1, h2, h3, h4, h5, p, span, a {
     font-family: 'Work Sans', Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
+    margin: .2em 0;
 }
 
 h1 {
     font-family: "Work Sans", Helvetica, sans-serif;
-    font-size: max(4vw, 4vh);
+    font-size: 4.5em;
     font-weight: 700;
 }
 
 h2 {
-    font-size: max(3vw, 3vh);
+    font-size: 3em;
     font-weight: 600;
 }
 
 h3 {
-    
-}
-
-h4 {
-    font-size: max(1.6vw, vh);
+    font-size: 2em;
     font-weight: 600;
 }
 
+h4 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h5 {
+    font-size:1.3em;
+    font-weight: 500;
+}
+
 section {
-    height: 100vh;
+    min-height: 70vh;
 }
 
 button, .button {
@@ -69,4 +77,9 @@ button, .button {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     border: none;
     transition: 200ms;
+}
+
+svg {
+    min-width: 0;
+    min-height: 0;
 }

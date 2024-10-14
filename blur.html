@@ -59,16 +59,47 @@
     </div>
 
   <script>
-    const blur = document.getElementsByClassName('blur');
+const blurs = document.getElementsByClassName('blur');
 
-    document.addEventListener('mousemove', (e) => {
-        Array.from(blur).forEach(element => {
-            console.log("pageX: " + e.pageX);
-            console.log("parentX: " + element.parentElement.getBoundingClientRect().left);
-            element.style.left = `${e.pageX - element.parentElement.getBoundingClientRect().left}px`;
-            element.style.top = `${e.pageY - element.parentElement.getBoundingClientRect().top}px`;
-        });
-    });
+let mouseX = 0;
+let mouseY = 0;
+
+const blurPositions = Array.from(blurs).map(() => ({
+  currentX: 0,
+  currentY: 0
+}));
+
+// linear interpolation function for smoother animation
+function lerp(start, end, factor) {
+  return start + (end - start) * factor;
+}
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.pageX;
+  mouseY = e.pageY;
+});
+
+function updateBlurs() {
+  Array.from(blurs).forEach((element, index) => {
+    const rect = element.parentElement.getBoundingClientRect();
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    
+    const targetX = mouseX - (rect.left + scrollX);
+    const targetY = mouseY - (rect.top + scrollY);
+    
+    blurPositions[index].currentX = lerp(blurPositions[index].currentX, targetX, 0.1);
+    blurPositions[index].currentY = lerp(blurPositions[index].currentY, targetY, 0.1);
+    
+    element.style.left = `${blurPositions[index].currentX}px`;
+    element.style.top = `${blurPositions[index].currentY}px`;
+  });
+  
+  requestAnimationFrame(updateBlurs);
+}
+
+requestAnimationFrame(updateBlurs);
+
   </script>
 </body>
 </html>

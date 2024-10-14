@@ -29,6 +29,10 @@
     @include glow($accent, 6, 0.4);
 }
 
+.accent-box-glow {
+    @include box-glow($accent, 18, 0.6);
+}
+
 .text-accent-glow {
     @include text-glow($accent, 6, 0.4);
 }
@@ -50,7 +54,7 @@
 
 .text-hover-glow-accent-m {
     $glow-color: rgba($accent, 0.75);
-    transition: 350ms ease-out;
+    transition: text-shadow 350ms ease-out;
     &:hover {
         transition: 400ms;
         text-shadow: 
@@ -60,10 +64,33 @@
     }
 }
 
-.hover-grow {
+.transition-fast {
     transition: 200ms;
+}
+
+.transition-medium {
+    transition: 300ms;
+}
+
+.transition-slow {
+    transition: 500ms;
+}
+
+.hover-grow {
     &:hover {
         transform: scale(1.05);
+    }
+}
+
+.hover-glow {
+    &:hover {
+        @extend .accent-glow;
+    }
+}
+
+.hover-box-glow {
+    &:hover {
+        @extend .accent-box-glow;
     }
 }
 
@@ -73,8 +100,8 @@
 
 .accent-border {
     border: .15em solid;
-    border-color: linear-gradient(235deg, rgba($accent, 0), rgba(0, 0, 0, 0), rgba($accent, 0));
-    border-radius: 2em;
+    border-color: $accent;
+    border-radius: 1em;
 }
 
 .blurred-bg {
@@ -214,4 +241,16 @@
 
 .accent-button {
     border: .15em solid rgba($accent, 0.5);
+}
+
+.gap-s {
+    gap: 1em;
+}
+
+.gap-m {
+    gap: 2em;
+}
+
+.gap-l {
+    gap: 4em;
 }

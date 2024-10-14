@@ -2,16 +2,20 @@
     filter: drop-shadow(0 0 #{$blur}px rgba($base-color, $strength));
 }
 
+@mixin text-glow($base-color, $blur, $strength) {
+    text-shadow: 0 0 #{$blur}px rgba($base-color, $strength);
+}
+
+@mixin box-glow($base-color, $blur, $strength) {
+    box-shadow: 0 0 #{$blur}px rgba($base-color, $strength);
+}
+
 @mixin gradient-text($start-color, $end-color) {
     background: linear-gradient(45deg, $start-color, $end-color);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
-}
-
-@mixin text-glow($base-color, $blur, $strength) {
-    text-shadow: 0 0 #{$blur}px rgba($base-color, $strength);
 }
 
 @mixin blur-blob($bg-color, $blur-radius) {
@@ -31,10 +35,9 @@
 @mixin container($size) {
     padding: 5vh;
     margin: 2em auto;
-    max-width: 80%;
+    max-width: 90%;
     width: $size;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 2vh;
 }

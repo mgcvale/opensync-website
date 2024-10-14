@@ -4,7 +4,7 @@
 header {
     width: calc(100vw - (max(1vh, 1vw) * 2));
     position: sticky;
-    top: 0;
+    top: max(1vh, 1vw);
     left: 0;
     margin: max(1vh, 1vw);
     z-index: 2;
