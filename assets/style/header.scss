@@ -41,6 +41,7 @@ html:has(#menu-toggle:checked) {
         display: flex;
         opacity: 1;
     }
+
     .hamburger span{
         &:nth-child(1) {
             transform: rotate(45deg);
