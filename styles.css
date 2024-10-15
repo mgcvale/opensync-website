@@ -626,8 +626,8 @@ header {
   justify-content: space-between;
   overflow: hidden;
 }
-header * {
-  backdrop-filter: blur(4px);
+header > * {
+  backdrop-filter: blur(6px);
 }
 header svg {
   color: #d1d0c5;

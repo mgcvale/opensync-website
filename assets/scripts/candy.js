@@ -37,7 +37,12 @@ function updateBlurs() {
   requestAnimationFrame(updateBlurs);
 }
 
-requestAnimationFrame(updateBlurs);
+if (window.innerWidth > 768) {
+  requestAnimationFrame(updateBlurs);
+  console.log("matched");
+  // dont update blurs if it is a phone
+}
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {

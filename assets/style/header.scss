@@ -21,8 +21,8 @@ header {
     justify-content: space-between;
     overflow: hidden;
 
-    * {
-        backdrop-filter: blur(4px);
+    > *{
+        backdrop-filter: blur(6px);
     }
 
     svg {
