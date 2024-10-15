@@ -239,18 +239,11 @@
     }
 }
 
-.accent-button {
-    border: .15em solid rgba($accent, 0.5);
-}
+// media queries
 
-.gap-s {
-    gap: 1em;
-}
-
-.gap-m {
-    gap: 2em;
-}
-
-.gap-l {
-    gap: 4em;
+@media (max-width: 600px) {
+    .mobile-align-center {
+        align-self: center; // important to override other align utilities
+        text-align: center;
+    }
 }

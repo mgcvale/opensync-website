@@ -20,7 +20,7 @@
 }
 
 .container {
-    @include container(1000px);
+    @include container(960px);
 
 
     div {
@@ -46,6 +46,11 @@
 
 .homepage {
     height: 70vh;
+    #home-buttons {
+        @media (max-width: 560px) {
+            flex-direction: column !important;
+        }
+    }
 }
 
 .container-l {
@@ -81,9 +86,13 @@
 
         svg {
             @include glow($accent, 30, 0.8);
-            max-width: 120px;
+            max-width: 180px;
+            max-height: 180px;
+            min-height: 180px;
+            max-height: 180px;
+            width: auto;
+            height: auto;
             padding: 1em;
-            width: 20vw;
             overflow:visible;
             height: auto;
         }

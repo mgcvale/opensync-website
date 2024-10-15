@@ -15,6 +15,34 @@ $gray: #424446;
     src: url(/assets/font/Monaco.ttf);
 }
 
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 11px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,32 +59,48 @@ h1, h2, h3, h4, h5, p, span, a {
     font-family: 'Work Sans', Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
-    margin: .2em 0;
+    margin: .2rem 0;
 }
 
 h1 {
     font-family: "Work Sans", Helvetica, sans-serif;
-    font-size: 4.5em;
+    font-size: 4.5rem;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 2.25rem;
     font-weight: 600;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+
+
 h5 {
-    font-size:1.3em;
+    font-size:1.3rem;
     font-weight: 500;
 }
 
@@ -82,4 +126,13 @@ button, .button {
 svg {
     min-width: 0;
     min-height: 0;
+}
+
+hr {
+    border-width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: $gray;
+    width: 50%;
+    margin: 30px auto;
 }

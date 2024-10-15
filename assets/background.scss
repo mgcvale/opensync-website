@@ -8,13 +8,34 @@
     width: 100%;
     z-index: -1;
     overflow: hidden;
-    background: #0f2027; 
-    background: linear-gradient(to bottom, #0f2027, #203a43);
+    background: linear-gradient(to top, rgba(6, 182, 212, 1), rgba(0, 0, 0, 0));
     background: url(/assets/img/grain-medium.webp),radial-gradient(100% 80% at top,rgb(6 182 212 / 30%) 0%,rgb(14 165 233 / 10%),transparent);
     -webkit-mask-image: radial-gradient(100% 80% at top,white,rgba(0,0,0,1),rgba(0,0,0,1),transparent);
     mask-image: radial-gradient(100% 80% at top,white,rgba(0,0,0,1),rgba(0,0,0,1),transparent);
 }
 
+.background-overlay-base {
+    position:fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    background: url(/assets/img/grain-soft.webp), linear-gradient(to top, rgba(4, 128, 150, 0.1), rgba(0, 0, 0, 0));
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1.5px);
+    display: none;
+    pointer-events: none;
+}
 
 @media only screen and (max-width: 768px) {
     .background-overlay {

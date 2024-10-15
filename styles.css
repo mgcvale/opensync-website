@@ -6,6 +6,30 @@
   font-family: "Monaco";
   src: url(/assets/font/Monaco.ttf);
 }
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -21,32 +45,46 @@ h1, h2, h3, h4, h5, p, span, a {
   font-family: "Work Sans", Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
-  margin: 0.2em 0;
+  margin: 0.2rem 0;
 }
 
 h1 {
   font-family: "Work Sans", Helvetica, sans-serif;
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -72,6 +110,15 @@ button, .button {
 svg {
   min-width: 0;
   min-height: 0;
+}
+
+hr {
+  border-width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #424446;
+  width: 50%;
+  margin: 30px auto;
 }
 
 .flex {
@@ -307,22 +354,12 @@ svg {
     transform: translateY(0);
   }
 }
-.accent-button {
-  border: 0.15em solid rgba(32, 122, 131, 0.5);
+@media (max-width: 600px) {
+  .mobile-align-center {
+    align-self: center;
+    text-align: center;
+  }
 }
-
-.gap-s {
-  gap: 1em;
-}
-
-.gap-m {
-  gap: 2em;
-}
-
-.gap-l {
-  gap: 4em;
-}
-
 @font-face {
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
@@ -330,6 +367,30 @@ svg {
 @font-face {
   font-family: "Monaco";
   src: url(/assets/font/Monaco.ttf);
+}
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
 }
 * {
   margin: 0;
@@ -346,32 +407,46 @@ h1, h2, h3, h4, h5, p, span, a {
   font-family: "Work Sans", Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
-  margin: 0.2em 0;
+  margin: 0.2rem 0;
 }
 
 h1 {
   font-family: "Work Sans", Helvetica, sans-serif;
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -399,6 +474,15 @@ svg {
   min-height: 0;
 }
 
+hr {
+  border-width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #424446;
+  width: 50%;
+  margin: 30px auto;
+}
+
 @font-face {
   font-family: "Blender Pro Medium";
   src: url(font/BlenderProMedium.ttf);
@@ -406,6 +490,30 @@ svg {
 @font-face {
   font-family: "Monaco";
   src: url(/assets/font/Monaco.ttf);
+}
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
 }
 * {
   margin: 0;
@@ -422,32 +530,46 @@ h1, h2, h3, h4, h5, p, span, a {
   font-family: "Work Sans", Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
-  margin: 0.2em 0;
+  margin: 0.2rem 0;
 }
 
 h1 {
   font-family: "Work Sans", Helvetica, sans-serif;
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -473,6 +595,19 @@ button, .button {
 svg {
   min-width: 0;
   min-height: 0;
+}
+
+hr {
+  border-width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #424446;
+  width: 50%;
+  margin: 30px auto;
+}
+
+html:has(#menu-toggle:checked) .modal-overlay {
+  display: block;
 }
 
 header {
@@ -484,6 +619,7 @@ header {
   z-index: 2;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 header * {
   backdrop-filter: blur(4px);
@@ -505,24 +641,57 @@ header > a svg {
   height: 1.5em;
   width: 1.5em;
 }
-header > nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header nav {
+  position: relative;
+  overflow: visible;
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 9999px;
-  gap: 0.5em;
   padding: 0.5em;
 }
-header > nav a {
+header nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 0.5em;
+}
+header nav .menu-toggle {
+  display: none;
+}
+header nav .hamburger {
+  cursor: pointer;
+  display: none;
+}
+header nav .hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #424446;
+}
+header nav .hamburger-nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  height: 90vh;
+  width: 90vw;
+  background: red;
+  z-index: 9999;
+  overflow: visible;
+}
+header nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1em;
   gap: 0.5em;
 }
-header > nav a svg {
+header nav a svg {
   height: 1.5em;
   width: 1.5em;
 }
@@ -534,6 +703,30 @@ header > nav a svg {
 @font-face {
   font-family: "Monaco";
   src: url(/assets/font/Monaco.ttf);
+}
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
 }
 * {
   margin: 0;
@@ -550,32 +743,46 @@ h1, h2, h3, h4, h5, p, span, a {
   font-family: "Work Sans", Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
-  margin: 0.2em 0;
+  margin: 0.2rem 0;
 }
 
 h1 {
   font-family: "Work Sans", Helvetica, sans-serif;
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 h5 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -603,6 +810,15 @@ svg {
   min-height: 0;
 }
 
+hr {
+  border-width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #424446;
+  width: 50%;
+  margin: 30px auto;
+}
+
 .background-overlay {
   position: fixed;
   top: -40%;
@@ -611,11 +827,33 @@ svg {
   width: 100%;
   z-index: -1;
   overflow: hidden;
-  background: #0f2027;
-  background: linear-gradient(to bottom, #0f2027, #203a43);
+  background: linear-gradient(to top, rgb(6, 182, 212), rgba(0, 0, 0, 0));
   background: url(/assets/img/grain-medium.webp), radial-gradient(100% 80% at top, rgba(6, 182, 212, 0.3) 0%, rgba(14, 165, 233, 0.1), transparent);
   -webkit-mask-image: radial-gradient(100% 80% at top, white, rgb(0, 0, 0), rgb(0, 0, 0), transparent);
   mask-image: radial-gradient(100% 80% at top, white, rgb(0, 0, 0), rgb(0, 0, 0), transparent);
+}
+
+.background-overlay-base {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+  background: url(/assets/img/grain-soft.webp), linear-gradient(to top, rgba(4, 128, 150, 0.1), rgba(0, 0, 0, 0));
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1.5px);
+  display: none;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -638,13 +876,18 @@ svg {
 }
 
 .container {
-  padding: 5vh;
+  padding: 4vh 0;
   margin: 2em auto;
   max-width: 90%;
-  width: 1000px;
+  width: 960px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 6em auto;
+  }
 }
 .container div {
   display: flex;
@@ -666,15 +909,25 @@ svg {
 .homepage {
   height: 70vh;
 }
+@media (max-width: 560px) {
+  .homepage #home-buttons {
+    flex-direction: column !important;
+  }
+}
 
 .container-l {
-  padding: 5vh;
+  padding: 4vh 0;
   margin: 2em auto;
   max-width: 90%;
   width: 1250px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .container-l {
+    margin: 6em auto;
+  }
 }
 
 .gallery {
@@ -697,9 +950,13 @@ svg {
 }
 .gallery .gallery-item svg {
   filter: drop-shadow(0 0 30px rgba(32, 122, 131, 0.8));
-  max-width: 120px;
+  max-width: 180px;
+  max-height: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
   padding: 1em;
-  width: 20vw;
   overflow: visible;
   height: auto;
 }
