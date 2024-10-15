@@ -73,8 +73,8 @@ html:has(#menu-toggle:checked) {
     padding: 10vh;
     font-size: 1.5em;
     border-radius: 1.5em;
-    background: url(/assets/img/grain.webp) rgba(00, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
+    background: url(/assets/img/grain.webp) rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     z-index: 5;
     overflow: visible;
     opacity: 0;
